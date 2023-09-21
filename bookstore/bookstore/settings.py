@@ -47,7 +47,8 @@ INSTALLED_APPS = [
 
     # Local Apps
     'users.apps.UsersConfig',
-    'pages.apps.PagesConfig'
+    'pages.apps.PagesConfig',
+    'books.apps.BooksConfig'
 ]
 
 MIDDLEWARE = [
@@ -167,3 +168,4 @@ AUTH_USER_MODEL ='users.CustomUser'
 LOGIN_REDIRECT_URL ='home'
 LOGOUT_REDIRECT_URL='home'
 CRISPY_TEMPLATE_PACK='bootstrap4'
+DEFAULT_FROM_EMAIL='admin@bookstore.com'
